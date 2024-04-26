@@ -6,3 +6,42 @@
 # 4. 생성한 뉴스 데이터를 Elastic Search를 사용하여 저장하는 기능 (데이터 저장 기능) elasticsearch.py
 # 5. Elastic Search에 저장된 데이터를 검색하는 기능 (데이터 검색 기능) elasticsearch.py
 # 6. 위의 기능을 모두 실행하는 main.py(프로그램의 실행)
+
+from crolling import NewsCrawler
+from analysis import TextAnalyzer
+from visualization import Visualizer
+from es_manager import ElasticsearchManager
+
+def main():
+    keyword = input("Enter the keyword for news search: ")
+    crawler = NewsCrawler()
+    titles = crawler.crawl_news_titles(keyword)
+
+    if not titles:
+        print("No titles found for the keyword.")
+        return
+
+    analyzer = TextAnalyzer()
+    frequencies = analyzer.analyze_frequency(titles)
+
+    visualizer = Visualizer()
+    visualizer.plot_histogram(frequencies)
+    visualizer.generate_wordcloud(frequencies)
+
+    es_manager = ElasticsearchManager()
+    documents = [{'text': title} for title in titles]
+    saved_results = es_manager.save_to_elasticsearch(documents)
+    print("Data has been saved to Elasticsearch. Saved documents:")
+    for _id, text in saved_results:
+        print(f"Document ID: {_id}, Text: {text[:50]}...")
+
+    search_results = es_manager.search_in_elasticsearch(keyword)
+    print("Search results from Elasticsearch:")
+    for result in search_results:
+        print(result['_source']['text'])
+
+if __name__ == "__main__":
+    main()
+
+
+
