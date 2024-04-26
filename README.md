@@ -41,9 +41,9 @@
 - **elasticsearch.py**: Elasticsearch와의 데이터 저장 및 검색 기능을 담당합니다.
 - **main.py**: 프로그램의 메인 실행 파일입니다.
 
-![Project Screenshot]("C:/Users/iam_i/Desktop/Figure_1.png")
-![Project Screenshot]("C:/Users/iam_i/Desktop/Figure2_1.png")
-![Project Screenshot]("C:/Users/iam_i/Desktop/203954.png")
+![Figure_1](https://github.com/jun7507/NewDataAnalysis/assets/92439723/3777c15c-02b2-41ca-a014-a6f0f501ab35)
+![Figure2_1](https://github.com/jun7507/NewDataAnalysis/assets/92439723/44866c4e-9c91-4b8c-83f3-a790a0a5a38d)
+![203954](https://github.com/jun7507/NewDataAnalysis/assets/92439723/8c464684-e864-4909-bf90-4e2d7e99937e)
 
 
 ## 문제 해결
