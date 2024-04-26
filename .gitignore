@@ -1,0 +1,4 @@
+# *.keystore
+!debug.keystore
+!.env
+my-release-key.keystore
