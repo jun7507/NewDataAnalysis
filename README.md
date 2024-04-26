@@ -34,16 +34,16 @@
 2. 프롬프트에 검색할 키워드를 입력합니다.
 3. 프로그램이 데이터를 수집, 분석, 시각화하고 Elasticsearch에 저장합니다.
 
+![Figure_1](https://github.com/jun7507/NewDataAnalysis/assets/92439723/ed8964d4-a8a2-420f-a8f5-e6f6b289134d)
+![Figure2_1](https://github.com/jun7507/NewDataAnalysis/assets/92439723/11d104c2-98c3-4037-ac43-66fcd083f40d)
+![203954](https://github.com/jun7507/NewDataAnalysis/assets/92439723/3fee0456-131f-4ecc-a547-dc79d9a85109)
+
 ## 구성 파일 설명
 - **crolling.py**: 키워드에 따른 뉴스 크롤링을 담당합니다.
 - **analysis.py**: 수집된 데이터의 빈도 분석을 처리합니다.
 - **visualization.py**: 데이터 시각화 기능을 구현합니다.
 - **elasticsearch.py**: Elasticsearch와의 데이터 저장 및 검색 기능을 담당합니다.
 - **main.py**: 프로그램의 메인 실행 파일입니다.
-
-![Figure_1](https://github.com/jun7507/NewDataAnalysis/assets/92439723/3777c15c-02b2-41ca-a014-a6f0f501ab35)
-![Figure2_1](https://github.com/jun7507/NewDataAnalysis/assets/92439723/44866c4e-9c91-4b8c-83f3-a790a0a5a38d)
-![203954](https://github.com/jun7507/NewDataAnalysis/assets/92439723/8c464684-e864-4909-bf90-4e2d7e99937e)
 
 
 ## 문제 해결
