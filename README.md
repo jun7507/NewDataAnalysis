@@ -41,5 +41,10 @@
 - **elasticsearch.py**: Elasticsearch와의 데이터 저장 및 검색 기능을 담당합니다.
 - **main.py**: 프로그램의 메인 실행 파일입니다.
 
+![Project Screenshot]("C:/Users/iam_i/Desktop/Figure_1.png")
+![Project Screenshot]("C:/Users/iam_i/Desktop/Figure2_1.png")
+![Project Screenshot]("C:/Users/iam_i/Desktop/203954.png")
+
+
 ## 문제 해결
 만약 Elasticsearch 연결에 문제가 생긴 경우, Elasticsearch 서버 설정을 확인하고 서버가 실행 중인지 확인하세요. 또한, 방화벽 설정이 Elasticsearch 서버 포트를 차단하고 있지 않은지 검사하세요.
